@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Văn Tú | Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-slate-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-primary tracking-tight">Phạm Văn Tú<span class="text-slate-800">.</span></a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-slate-600 hover:text-primary font-medium transition">Trang chủ</a>
+                    <a href="#education" class="text-slate-600 hover:text-primary font-medium transition">Dự án học tập</a>
+                    <a href="#experience" class="text-slate-600 hover:text-primary font-medium transition">Kinh nghiệm làm việc</a>
+                    <a href="#contact" class="text-slate-600 hover:text-primary font-medium transition">Liên hệ</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
+                <a href="#home" class="block px-3 py-2 text-slate-600 font-medium hover:text-primary hover:bg-slate-50 rounded-md">Trang chủ</a>
+                <a href="#education" class="block px-3 py-2 text-slate-600 font-medium hover:text-primary hover:bg-slate-50 rounded-md">Dự án học tập</a>
+                <a href="#experience" class="block px-3 py-2 text-slate-600 font-medium hover:text-primary hover:bg-slate-50 rounded-md">Kinh nghiệm làm việc</a>
+                <a href="#contact" class="block px-3 py-2 text-slate-600 font-medium hover:text-primary hover:bg-slate-50 rounded-md">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="md:w-3/5 text-center md:text-left">
+            <p class="text-primary font-semibold tracking-wide uppercase mb-3">Xin chào, tôi là</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-4 leading-tight">
+                Phạm Văn Tú
+            </h1>
+            <h2 class="text-xl md:text-2xl text-slate-600 font-medium mb-6 leading-relaxed">
+                Sinh viên Khoa Hệ thống Thông tin Quản lý <br class="hidden lg:block" />
+                <span class="text-primary">Chuyên ngành Thương mại Điện tử</span>
+            </h2>
+            <p class="text-slate-500 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+                Tôi có kinh nghiệm trong việc phát triển website, tối ưu hóa công cụ tìm kiếm (SEO) và triển khai các chiến dịch Digital Marketing đa nền tảng. Luôn sẵn sàng học hỏi và chinh phục những thử thách mới.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#experience" class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-full font-medium transition shadow-lg shadow-blue-500/30 text-center">
+                    Xem Dự Án
+                </a>
+                <a href="CV_PhamVanTu.pdf" target="_blank" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-3 rounded-full font-medium transition shadow-sm text-center flex items-center justify-center gap-2">
+                    <i class="fas fa-download"></i> Tải CV
+                </a>
+            </div>
+            
+            <div class="mt-8 flex justify-center md:justify-start gap-5">
+                <a href="https://www.linkedin.com/in/t%C3%BA-ph%E1%BA%A1m-b8712632a/" target="_blank" class="w-10 h-10 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center hover:bg-[#0A66C2] hover:text-white transition">
+                    <i class="fab fa-linkedin-in text-lg"></i>
+                </a>
+                <a href="https://www.facebook.com/pham.van.tu.394255" target="_blank" class="w-10 h-10 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition">
+                    <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+            </div>
+        </div>
+        <div class="md:w-2/5 flex justify-center">
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-tr from-primary to-blue-300 rounded-full blur-2xl opacity-40"></div>
+                <img src="img/avatar.png" onerror="this.src='https://ui-avatars.com/api/?name=Văn+Tú&size=400&background=2563eb&color=fff'" alt="Phạm Văn Tú" class="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover object-top p-1 bg-white rounded-full border-4 border-white shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Projects -->
+    <section id="education" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Dự Án Học Tập</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded"></div>
+                <p class="mt-4 text-slate-500 max-w-2xl mx-auto">Tổng hợp các sản phẩm thực hành và đồ án trong quá trình học tập tại trường.</p>
+            </div>
+
+            <!-- Websites Group -->
+            <h3 class="text-2xl font-semibold text-slate-800 mb-6 flex items-center gap-2"><i class="fas fa-globe text-primary"></i> Website & Web App</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm flex flex-col h-full">
+                    <div class="h-48 bg-slate-100 flex items-center justify-center p-4 relative overflow-hidden group">
+                        <img src="img/về chúng tôi.png" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Orianna Jewelry">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <h4 class="relative z-10 text-white font-bold text-xl tracking-wide">Orianna Jewelry</h4>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <p class="text-slate-600 mb-4 text-sm flex-grow">Website thương mại điện tử chuyên cung cấp trang sức, được thiết kế tối ưu cho trải nghiệm người dùng.</p>
+                        <a href="https://oriannajewelry.online/" target="_blank" class="text-primary font-medium hover:text-secondary flex items-center gap-1 w-fit">
+                            Xem trực tiếp <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm flex flex-col h-full">
+                    <div class="h-48 bg-slate-100 flex items-center justify-center p-4 relative overflow-hidden group">
+                        <img src="img/98-1724593455-vinh-ha-long-quan-dao-cat-ba-duoc-cong-nhan-la-di-san-dia-chat-quoc-te-20240825135755-17623157117251447798172.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Tourdi">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <h4 class="relative z-10 text-white font-bold text-xl tracking-wide">Tourdi</h4>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="mb-2 flex flex-wrap gap-2">
+                            <span class="text-[10px] uppercase font-bold bg-green-100 text-green-700 px-2 py-1 rounded">SEO Top 1</span>
+                        </div>
+                        <p class="text-slate-600 mb-4 text-sm flex-grow">Website du lịch. Dự án được áp dụng các kỹ thuật SEO thực chiến, phần lớn các bài viết đạt TOP 1 Google.</p>
+                        <a href="https://tourdi.id.vn/" target="_blank" class="text-primary font-medium hover:text-secondary flex items-center gap-1 w-fit">
+                            Xem trực tiếp <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm flex flex-col h-full">
+                    <div class="h-48 bg-slate-100 flex items-center justify-center p-4 relative overflow-hidden group">
+                        <img src="img/Logo.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Hair Salon Design">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <h4 class="relative z-10 text-white font-bold text-xl tracking-wide">Hair Salon Web</h4>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <p class="text-slate-600 mb-4 text-sm flex-grow">Dự án thiết kế giao diện (Web Design) cho tiệm làm tóc, phong cách hiện đại, hiển thị tốt trên thiết bị di động.</p>
+                        <a href="https://hair-rep-1.vercel.app/" target="_blank" class="text-primary font-medium hover:text-secondary flex items-center gap-1 w-fit">
+                            Xem trực tiếp <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documents Group -->
+            <h3 class="text-2xl font-semibold text-slate-800 mb-6 flex items-center gap-2 mt-12"><i class="fas fa-file-alt text-primary"></i> Báo Cáo & Thiết Kế Hệ Thống</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                
+                <div class="flex items-start gap-4 p-5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white transition shadow-sm">
+                    <div class="w-12 h-12 rounded bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 text-2xl">
+                        <i class="fas fa-file-word"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-dark text-lg mb-1">Báo Cáo Thực Hành ERP</h4>
+                        <p class="text-sm text-slate-500 mb-3">Tài liệu: D05_BÁO CÁO THỰC HÀNH ERP 1.2.2.docx</p>
+                        <a href="file/D05_BÁO CÁO THỰC HÀNH ERP 1.2.2.docx" class="text-sm text-primary hover:underline">Xem tài liệu</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white transition shadow-sm">
+                    <div class="w-12 h-12 rounded bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 text-2xl">
+                        <i class="fab fa-google-drive"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-dark text-lg mb-1">Phân Tích & Thiết Kế Hệ Thống</h4>
+                        <p class="text-sm text-slate-500 mb-3">Bản đặc tả yêu cầu và thiết kế hệ thống chi tiết.</p>
+                        <a href="https://docs.google.com/document/d/1v3qmXTDw5U67F-sYpgw7stRUUfXyD7GoBVQ9E7F-wrM/edit" target="_blank" class="text-sm text-primary hover:underline">Xem trên Google Docs</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white transition shadow-sm">
+                    <div class="w-12 h-12 rounded bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 text-2xl">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-dark text-lg mb-1">Thiết Kế CSDL - Báo Điện Tử</h4>
+                        <p class="text-sm text-slate-500 mb-3">Tài liệu: THIẾT KẾ TRANG BÁO ĐIỆN TỬ NHÓM 2.docx</p>
+                        <a href="file/THIẾT KẾ TRANG BÁO ĐIỆN TỬ NHÓM 2.docx" class="text-sm text-primary hover:underline">Xem tài liệu</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white transition shadow-sm">
+                    <div class="w-12 h-12 rounded bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 text-2xl">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-dark text-lg mb-1">Bài tập quản lý sinh viên SQL Server</h4>
+                        <p class="text-sm text-slate-500 mb-3">Tài liệu: 030239230274_Phạm Văn Tú.docx</p>
+                        <a href="file/030239230274_Phạm Văn Tú.docx" class="text-sm text-primary hover:underline">Xem tài liệu</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience (BHS Miền Nam) -->
+    <section id="experience" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Dự Án Tại BHS MIỀN NAM</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded"></div>
+                <p class="mt-4 text-slate-500 max-w-2xl mx-auto mb-8">Kinh nghiệm thực chiến triển khai Digital Marketing & Website cho các dự án Bất Động Sản.</p>
+                
+                <!-- NÚT MỚI: Liên kết đến trang chi tiết -->
+                <a href="chi-tiet-bhs.html" class="inline-flex items-center gap-3 bg-primary hover:bg-secondary text-white px-8 py-3 rounded-full font-medium transition shadow-lg shadow-blue-500/30">
+                    <i class="fas fa-folder-open text-xl"></i> Xem Chi Tiết Báo Cáo & Chiến Lược
+                </a>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Project: Nam Hà -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 md:p-10 flex flex-col lg:flex-row gap-10 items-center">
+                    <div class="w-full lg:w-1/2">
+                        <img src="img/CSBH1.jpg" onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop'" alt="Nam Hà I-Town" class="rounded-xl shadow-md w-full h-auto object-cover">
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <div class="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">Real Estate Project</div>
+                        <h3 class="text-3xl font-bold text-dark mb-4">Khu Đô Thị Nam Hà I-Town</h3>
+                        <p class="text-slate-600 mb-6">Trực tiếp tham gia phát triển website và triển khai đa kênh truyền thông cho dự án Khu đô thị Nam Hà.</p>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <div>
+                                    <span class="font-semibold text-slate-800 block">Quản trị Website</span>
+                                    <a href="https://bhsmiennam.vn/nam-ha-i-town/" target="_blank" class="text-sm text-primary hover:underline">Xem Landing Page Dự án</a>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <div>
+                                    <span class="font-semibold text-slate-800 block">Facebook Ads</span>
+                                    <!-- Đã gắn link sang trang chi-tiet-bhs.html tại đây -->
+                                    <span class="text-sm text-slate-500">Lên chiến dịch, tối ưu quảng cáo Facebook. <a href="chi-tiet-bhs.html" class="text-primary hover:underline">(Xem file minh chứng)</a></span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <div>
+                                    <span class="font-semibold text-slate-800 block">Xây dựng kênh TikTok</span>
+                                    <span class="text-sm text-slate-500">Lên kịch bản, quay dựng video TikTok cho dự án.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project: The Ori Phương Mai -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 md:p-10 flex flex-col-reverse lg:flex-row gap-10 items-center">
+                    <div class="w-full lg:w-1/2">
+                        <div class="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">Real Estate Project</div>
+                        <h3 class="text-3xl font-bold text-dark mb-4">The Ori Phương Mai</h3>
+                        <p class="text-slate-600 mb-6">Đảm nhiệm vai trò SEO website và xây dựng kênh TikTok, mang lại lượng traffic tự nhiên và khách hàng thực tế.</p>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-star text-yellow-500 mt-1"></i>
+                                <div>
+                                    <span class="font-semibold text-slate-800 block">Thành tích SEO</span>
+                                    <span class="text-sm text-slate-500 block mb-1">Đẩy từ khóa dự án lên TOP tìm kiếm, mang lại lượng khách truy cập và tương tác hỏi giá thành công.</span>
+                                    <a href="https://bhsmiennam.vn/the-ori-phuong-mai/" target="_blank" class="text-sm text-primary hover:underline">Xem trang dự án đạt TOP</a>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fab fa-tiktok text-black mt-1"></i>
+                                <div>
+                                    <span class="font-semibold text-slate-800 block">Phát triển TikTok</span>
+                                    <span class="text-sm text-slate-500 block mb-1">Quản lý và phát triển nội dung kênh TikTok riêng cho dự án.</span>
+                                    <a href="https://www.tiktok.com/@theoriphuongmai?lang=vi-VN" target="_blank" class="text-sm text-primary hover:underline">Khám phá kênh TikTok</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <img src="img/parkrise_h_bmap_image_d.jpg" onerror="this.src='https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=800&auto=format&fit=crop'" alt="The Ori Phương Mai" class="rounded-xl shadow-md w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-dark text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 border-b border-slate-800 pb-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Sẵn sàng hợp tác?</h2>
+                    <p class="text-slate-400 mb-8 max-w-md">Nếu bạn đang tìm kiếm một người đam mê công nghệ và marketing để đồng hành cùng dự án của mình, hãy liên hệ với tôi.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 text-slate-300">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-primary">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span>tu090805@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-slate-300">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-primary">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span>0353 656 522</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col justify-center items-start md:items-end">
+                    <h3 class="text-xl font-semibold mb-6">Kết nối với tôi</h3>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/pham.van.tu.394255" target="_blank" class="w-12 h-12 rounded-full bg-slate-800 hover:bg-[#1877F2] flex items-center justify-center text-xl transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/t%C3%BA-ph%E1%BA%A1m-b8712632a/" target="_blank" class="w-12 h-12 rounded-full bg-slate-800 hover:bg-[#0A66C2] flex items-center justify-center text-xl transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center text-slate-500 text-sm flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2024 Phạm Văn Tú All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed & Handcoded</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

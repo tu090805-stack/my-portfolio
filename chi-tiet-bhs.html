@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Báo Cáo & Chiến Lược BHS | Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#2563eb', secondary: '#1e40af', dark: '#0f172a', light: '#f8fafc' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .img-hover-zoom { transition: transform 0.3s ease; }
+        .img-hover-zoom:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- HEADER -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-slate-200 transition-all duration-300 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-primary tracking-tight">Phạm Văn Tú<span class="text-slate-800">.</span></a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-primary font-medium transition">Trang chủ</a>
+                    <a href="index.html#education" class="text-slate-600 hover:text-primary font-medium transition">Dự án học tập</a>
+                    <a href="bhs-mien-nam.html" class="text-primary font-medium transition border-b-2 border-primary">BHS Miền Nam</a>
+                    <a href="index.html#contact" class="text-slate-600 hover:text-primary font-medium transition">Liên hệ</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
+                <a href="index.html" class="block px-3 py-2 text-slate-600 font-medium hover:text-primary hover:bg-slate-50 rounded-md">Trang chủ</a>
+                <a href="index.html#education" class="block px-3 py-2 text-slate-600 font-medium hover:text-primary hover:bg-slate-50 rounded-md">Dự án học tập</a>
+                <a href="bhs-mien-nam.html" class="block px-3 py-2 text-primary font-medium bg-slate-50 rounded-md">BHS Miền Nam</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-slate-600 font-medium hover:text-primary hover:bg-slate-50 rounded-md">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
+        
+        <!-- Nút quay lại -->
+        <div class="mb-8">
+            <a href="index.html" class="text-slate-500 hover:text-primary transition flex items-center gap-2 w-fit font-medium">
+                <i class="fas fa-arrow-left"></i> Quay lại trang Dự Án BHS
+            </a>
+        </div>
+
+        <!-- Tiêu đề trang -->
+        <div class="mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-dark mb-4">Chi Tiết Báo Cáo & Chiến Lược</h1>
+            <div class="w-20 h-1 bg-primary rounded mb-6"></div>
+            <p class="text-lg text-slate-600 max-w-3xl">Tổng hợp các minh chứng về báo cáo kết quả Marketing, quản trị hệ thống Website, chiến lược Meta Ads và quản lý dữ liệu CRM tại BHS Miền Nam.</p>
+        </div>
+
+        <!-- 1. Báo cáo marketing (3 hình) -->
+        <section class="mb-20 bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+                <span class="w-10 h-10 bg-blue-100 text-primary rounded-lg flex items-center justify-center"><i class="fas fa-chart-pie"></i></span> 
+                Báo cáo Marketing
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group">
+                    <div class="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden mb-3 border border-slate-200 cursor-pointer">
+                        <img src="pages/Báo cáo marketing/13.jpg" onerror="this.src='https://placehold.co/600x400/e2e8f0/475569?text=Báo+Cáo+Tháng'" alt="Báo cáo tháng" class="w-full h-full object-cover img-hover-zoom">
+                    </div>
+                    <h3 class="font-semibold text-center text-slate-700">Báo cáo tháng</h3>
+                </div>
+                <div class="group">
+                    <div class="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden mb-3 border border-slate-200 cursor-pointer">
+                        <img src="pages/Báo cáo marketing/14.jpg" onerror="this.src='https://placehold.co/600x400/e2e8f0/475569?text=Báo+Cáo+Nam+Hà'" alt="Báo cáo Nam Hà" class="w-full h-full object-cover img-hover-zoom">
+                    </div>
+                    <h3 class="font-semibold text-center text-slate-700">Báo cáo Nam Hà</h3>
+                </div>
+                <div class="group">
+                    <div class="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden mb-3 border border-slate-200 cursor-pointer">
+                        <img src="pages/Báo cáo marketing/15.jpg" onerror="this.src='https://placehold.co/600x400/e2e8f0/475569?text=Báo+Cáo+Tổng'" alt="Báo cáo tổng" class="w-full h-full object-cover img-hover-zoom">
+                    </div>
+                    <h3 class="font-semibold text-center text-slate-700">Báo cáo tổng</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Chiến lược quản trị website (2 hình) -->
+        <section class="mb-20 bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+                <span class="w-10 h-10 bg-green-100 text-green-600 rounded-lg flex items-center justify-center"><i class="fas fa-laptop-code"></i></span> 
+                Chiến lược quản trị Website
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group">
+                    <div class="aspect-video bg-slate-100 rounded-xl overflow-hidden mb-3 border border-slate-200 cursor-pointer">
+                        <img src="pages/Chiến lược quản trị website/11.jpg" onerror="this.src='https://placehold.co/800x450/e2e8f0/475569?text=Website+Admin'" alt="Website admin" class="w-full h-full object-cover object-top img-hover-zoom">
+                    </div>
+                    <h3 class="font-semibold text-center text-slate-700">Giao diện quản trị Admin</h3>
+                </div>
+                <div class="group">
+                    <div class="aspect-video bg-slate-100 rounded-xl overflow-hidden mb-3 border border-slate-200 cursor-pointer">
+                        <img src="pages/Chiến lược quản trị website/12.jpg" onerror="this.src='https://placehold.co/800x450/e2e8f0/475569?text=Website+Nam+Hà'" alt="Website Nam Hà" class="w-full h-full object-cover object-top img-hover-zoom">
+                    </div>
+                    <h3 class="font-semibold text-center text-slate-700">Giao diện Website Nam Hà</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Chiến lược ads meta (5 hình) -->
+        <section class="mb-20 bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+                <span class="w-10 h-10 bg-blue-100 text-[#1877F2] rounded-lg flex items-center justify-center"><i class="fab fa-facebook"></i></span> 
+                Chiến lược Ads Meta
+            </h2>
+            <p class="text-slate-600 mb-6">Quá trình phân tích, target đối tượng và lên chiến dịch quảng cáo trực tiếp trên nền tảng Meta.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden border border-slate-200 cursor-pointer">
+                    <img src="pages/chiến lược quảng cáo facebook/1.jpg" onerror="this.src='https://placehold.co/500x500/e2e8f0/475569?text=Quá+trình+1'" class="w-full h-full object-cover img-hover-zoom">
+                </div>
+                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden border border-slate-200 cursor-pointer">
+                    <img src="pages/chiến lược quảng cáo facebook/2.jpg" onerror="this.src='https://placehold.co/500x500/e2e8f0/475569?text=Quá+trình+2'" class="w-full h-full object-cover img-hover-zoom">
+                </div>
+                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden border border-slate-200 cursor-pointer">
+                    <img src="pages/chiến lược quảng cáo facebook/3.jpg" onerror="this.src='https://placehold.co/500x500/e2e8f0/475569?text=Quá+trình+3'" class="w-full h-full object-cover img-hover-zoom">
+                </div>
+                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden border border-slate-200 cursor-pointer">
+                    <img src="pages/chiến lược quảng cáo facebook/4.jpg" onerror="this.src='https://placehold.co/500x500/e2e8f0/475569?text=Quá+trình+4'" class="w-full h-full object-cover img-hover-zoom">
+                </div>
+                <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden border border-slate-200 cursor-pointer">
+                    <img src="pages/chiến lược quảng cáo facebook/5.jpg" onerror="this.src='https://placehold.co/500x500/e2e8f0/475569?text=Quá+trình+5'" class="w-full h-full object-cover img-hover-zoom">
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Hub spot (1 hình) -->
+        <section class="mb-20 bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+                <span class="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center"><i class="fas fa-users-cog"></i></span> 
+                HubSpot - Quản lý Core Khách hàng
+            </h2>
+            <div class="max-w-4xl mx-auto group">
+                <div class="aspect-video bg-slate-100 rounded-xl overflow-hidden mb-3 border border-slate-200 cursor-pointer">
+                    <img src="pages/hub spot/10.jpg" onerror="this.src='https://placehold.co/1000x562/e2e8f0/475569?text=Giao+diện+HubSpot+CRM'" alt="Quản lý HubSpot CRM" class="w-full h-full object-cover object-top img-hover-zoom">
+                </div>
+                <h3 class="font-semibold text-center text-slate-700">Hệ thống CRM quản lý dữ liệu khách hàng</h3>
+            </div>
+        </section>
+
+        <!-- 5. Quảng cáo web (3 hình) -->
+        <section class="mb-10 bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+                <span class="w-10 h-10 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center"><i class="fas fa-bullhorn"></i></span> 
+                Quảng Cáo Web (Bên Thứ 3)
+            </h2>
+            <p class="text-slate-600 mb-6">Minh chứng về việc triển khai quảng cáo và banner hiển thị thông qua các đối tác hiển thị bên thứ 3.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group">
+                    <div class="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden mb-3 border border-slate-200 cursor-pointer">
+                        <img src="pages/quảng cáo trên web/7.jpg" onerror="this.src='https://placehold.co/600x400/e2e8f0/475569?text=Quảng+Cáo+1'" class="w-full h-full object-cover img-hover-zoom">
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden mb-3 border border-slate-200 cursor-pointer">
+                        <img src="pages/quảng cáo trên web/8.jpg" onerror="this.src='https://placehold.co/600x400/e2e8f0/475569?text=Quảng+Cáo+2'" class="w-full h-full object-cover img-hover-zoom">
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden mb-3 border border-slate-200 cursor-pointer">
+                        <img src="pages/quảng cáo trên web/9.jpg" onerror="this.src='https://placehold.co/600x400/e2e8f0/475569?text=Quảng+Cáo+3'" class="w-full h-full object-cover img-hover-zoom">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-16 pb-8 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-slate-800 pb-8">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-2">Phạm Văn Tú</h3>
+                    <p class="text-slate-400 text-sm">Website Developer & Digital Marketer</p>
+                    <p class="text-slate-400 text-sm mt-1">Email: tu090805@gmail.com | SĐT: 0353 656 522</p>
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/pham.van.tu.394255" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-[#1877F2] flex items-center justify-center text-lg transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/t%C3%BA-ph%E1%BA%A1m-b8712632a/" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-[#0A66C2] flex items-center justify-center text-lg transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-slate-500 text-sm">
+                <p>&copy; 2024 Phạm Văn Tú. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCIPT CHO MENU ĐIỆN THOẠI -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
