@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
-    // 1. TÍNH NĂNG MENU TRÊN ĐIỆN THOẠI (Giữ nguyên)
+    // 1. TÍNH NĂNG MENU TRÊN ĐIỆN THOẠI
     // ----------------------------------------------------
     const btn = document.getElementById('mobile-menu-btn');
     const menu = document.getElementById('mobile-menu');
